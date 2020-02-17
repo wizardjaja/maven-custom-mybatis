@@ -15,6 +15,9 @@
     </environments>
     <!-- 设置mapping文件路径配置 -->
     <mappers>
-        <mapper resource="com/wizard/mapper/IUserMapper.xml"/>
+        <!--xml方式-->
+        <!--<mapper resource="com/wizard/mapper/IUserMapper.xml"/>-->
+        <!--注解方式-->
+        <mapper class="com.wizard.mapper.IUserMapper"/>
     </mappers>
 </configuration>
