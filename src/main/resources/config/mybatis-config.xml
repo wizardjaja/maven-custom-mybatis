@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!-- 环境配置 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <!--  配置连接数据库的四个参数 注意数据库版本  -->
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.OracleDriver"/>
+                <property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+                <property name="username" value="wizard" />
+                <property name="password" value="123" />
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 设置mapping文件路径配置 -->
+    <mappers>
+        <mapper resource="com/wizard/mapper/IUserMapper.xml"/>
+    </mappers>
+</configuration>
